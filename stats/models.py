@@ -32,7 +32,7 @@ class GeoCities(models.Model):
 
     def __str__(self):
         if self.city_name:
-            return ({}, {}).format(self.city_name, self.country_name)
+            return '{}, {}'.format(self.city_name, self.country_name)
         else:
             return self.country_name
 
